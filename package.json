@@ -1,0 +1,22 @@
+{
+  "name": "insta_backend",
+  "version": "1.0.0",
+  "description": "proyecto devF; clon del back de instagram",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon nodemon -L src/bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edgar Leyva",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^3.0.1",
+    "dotenv": "^6.0.0",
+    "graphql-yoga": "^1.16.2",
+    "jsonwebtoken": "^8.3.0",
+    "prisma-binding": "^2.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
