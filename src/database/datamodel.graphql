@@ -1,42 +1,38 @@
 type User {
-  id: ID! @unique
-  nickname: String! @unique
-  email: String! @unique
-  password:String!
-}
-
-
-type User_profile {
-  id: ID! @unique
-  user: User!
-  name: String!
-  birth_date: DateTime!
-  biography: String
-  photo_profile: String @defautl(value:"https://vignette.wikia.nocookie.net/bungostraydogs/images/1/1e/Profile-icon-9.png/revision/latest?cb=20171030104015")
+    id: ID! @unique
+    name: String
+    nickname: String! @unique
+    email: String! @unique
+    password:String!
+    birth_date: DateTime
+    biography: String
+    photo_profile: String @defautl(value:"https://vignette.wikia.nocookie.net/bungostraydogs/images/1/1e/Profile-icon-9.png/revision/latest?cb=20171030104015")
 
 }
 
-type User_post {
-  id: ID! @unique
-  user: User!
-  photo: String!
+type Posts {
+    id: ID! @unique
+    user: User!
+    title: String
+    photo: String!
 }
 
-type User_comment {
-  id: ID! @unique
-  user_post: User_post!
-  comment: String!
+type Comments {
+    id: ID! @unique
+    post: Posts!
+    user: User!
+    comment: String!
 }
 
 type Likes {
-  id: ID! @unique
-  user_post: User_post!
-  user: User!
+    id: ID! @unique
+    post: Posts!
+    user: User! @unique
 }
 
 
 type Followers {
-  id: ID! @unique
-  follower: User! @relation(name: "Seguidores")
-  followed: User! @relation(name: "Siguiendo")
+    id: ID! @unique
+    follower: User! @relation(name: "Seguidores")
+    followed: User! @relation(name: "Siguiendo") @unique
 }

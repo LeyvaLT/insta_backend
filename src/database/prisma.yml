@@ -1,2 +1,8 @@
 endpoint: https://us1.prisma.sh/ele-l-b813df/insta_backend/dev
 datamodel: datamodel.graphql
+
+#Deploy Hook
+
+hooks:
+  post-deploy:
+  - graphql get-schema --project database

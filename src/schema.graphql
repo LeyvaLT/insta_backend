@@ -1,0 +1,29 @@
+#import User, Posts, Comments, Likes, Followers from './generated/prisma.graphql';
+
+type Query {
+    users:[User!]!
+    me:User!
+    posts: [Posts!]!
+    user_posts: [Posts!]!
+    comments: [Comments!]!
+    user_comments: [Comments!]!
+    likes: [Likes!]!
+    post_likes(post_id:ID!): [Likes!]!
+    user_followers:[Followers!]!
+    user_followed:[Followers!]!
+}
+
+type Mutation {
+    signup(email: String!, nickname: String!, password: String!): AuthPayload
+    login(email: String!, password: String!): AuthPayload
+    updateUser(email: String, name:String,birth_date: String, biography: String, photo_profile: String):User!
+    addPost(user_id:ID!, title:String!, photo:String!):Posts!
+    addComment(post_id:ID!, comment:String):Comments!
+    addLike(post_id:ID!):Likes!
+    addFollower(user_followed_id:ID!): [Followers!]!
+}
+
+type AuthPayload{
+    token: String
+    user: User
+}

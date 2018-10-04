@@ -1,17 +1,14 @@
-require('dotenv').config();
 const { GraphQLServer } =  require('graphql-yoga');
 const { Prisma } = require('prisma-binding');
 const Query =  require('./resolvers/Query');
 const Mutation =  require('./resolvers/Mutation');
-//const Subscription =  require('./resolvers/Subscription');
-/*
+
+const PRISMA_ENDPOINT = process.env.PRISMA_ENDPOINT || 'https://us1.prisma.sh/ele-l-b813df/insta_backend/dev';
+
 const resolvers = {
     Query,
-    Mutation,
-    Subscription
-}
-*/
-
+    Mutation
+};
 
 const server = new GraphQLServer({
     typeDefs:'./src/schema.graphql',
@@ -19,8 +16,8 @@ const server = new GraphQLServer({
     context: req => ({
         ...req,
         db: new Prisma({
-            typeDefs: './src/schema.graphql',
-            endpoint: 'https://us1.prisma.sh/ele-l-b813df/insta_backend/dev',
+            typeDefs: 'src/generated/prisma.graphql',
+            endpoint: process.env.PRISMA_ENDPOINT,
             debug:true
         })
     }),
@@ -29,6 +26,4 @@ const server = new GraphQLServer({
     }
 });
 
-module.exports = {
-    server
-};
+module.exports = server;
