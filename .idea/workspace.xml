@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4a7b0a3-ab68-4547-a02d-1d1848495a12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.graphqlconfig.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bin/www" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/const.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resolvers/AuthPayload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resolvers/Mutation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resolvers/Query.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resolvers/Subscription.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/schema.graphql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/datamodel.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/datamodel.graphql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/prisma.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/prisma.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../insta_backedn/.tmp/" />
     <ignored path="$PROJECT_DIR$/../insta_backedn/temp/" />
@@ -45,38 +33,42 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="gitignore" value="1" />
           <entry key="graphql" value="4" />
           <entry key="graphqls" value="1" />
-          <entry key="js" value="11" />
-          <entry key="json" value="2" />
+          <entry key="js" value="12" />
+          <entry key="json" value="3" />
           <entry key="www" value="2" />
           <entry key="yml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Git file" value="1" />
           <entry key="GraphQL" value="4" />
           <entry key="GraphQL Schema" value="1" />
-          <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="11" />
+          <entry key="JSON" value="3" />
+          <entry key="JavaScript" value="12" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="gitignore" value="2" />
           <entry key="graphql" value="574" />
-          <entry key="js" value="723" />
-          <entry key="json" value="1" />
+          <entry key="js" value="727" />
+          <entry key="json" value="3" />
           <entry key="www" value="2" />
           <entry key="yml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Git file" value="2" />
           <entry key="GraphQL" value="574" />
-          <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="723" />
+          <entry key="JSON" value="3" />
+          <entry key="JavaScript" value="727" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="YAML" value="5" />
         </counts>
@@ -103,11 +95,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/resolvers/Query.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-43">
               <caret line="35" column="56" lean-forward="true" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -142,15 +152,16 @@
         <option value="$PROJECT_DIR$/.graphqlconfig.yml" />
         <option value="$PROJECT_DIR$/src/database/prisma.yml" />
         <option value="$PROJECT_DIR$/src/resolvers/AuthPayload.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/const.js" />
         <option value="$PROJECT_DIR$/src/resolvers/Subscription.js" />
         <option value="$PROJECT_DIR$/src/utils/utils.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/database/datamodel.graphql" />
         <option value="$PROJECT_DIR$/src/schema.graphql" />
         <option value="$PROJECT_DIR$/src/resolvers/Query.js" />
         <option value="$PROJECT_DIR$/src/resolvers/Mutation.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -269,12 +280,12 @@
       <workItem from="1538525130589" duration="33000" />
       <workItem from="1538658892009" duration="10638000" />
       <workItem from="1538673628107" duration="8658000" />
-      <workItem from="1538684751637" duration="3105000" />
+      <workItem from="1538684751637" duration="3666000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38391000" />
+    <option name="totallyTimeSpent" value="38952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -295,7 +306,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="RNConsole" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32704404" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32704404" />
       <window_info anchor="bottom" id="GraphQL" order="12" weight="0.32845187" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -323,13 +334,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resolvers/Subscription.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -337,13 +341,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -396,6 +393,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-43">
           <caret line="35" column="56" lean-forward="true" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="81" column="6" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
         </state>
       </provider>
     </entry>
