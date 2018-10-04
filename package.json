@@ -4,8 +4,8 @@
   "description": "proyecto devF; clon del back de instagram",
   "main": "src/index.js",
   "scripts": {
-    "server": "node src/bin/www",
-    "start": "node src/bin/www"
+    "server": "node ./src/bin/www",
+    "start": "node ./src/bin/www"
   },
   "engines": {
     "node": "8.12.0"
