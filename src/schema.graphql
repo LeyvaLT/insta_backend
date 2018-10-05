@@ -19,7 +19,7 @@ type Mutation {
     signup(email: String!, nickname: String!, password: String!): AuthPayload
     login(email: String!, password: String!): AuthPayload
     updateUser(email: String, name: String,birth_date: String, biography: String, photo_profile: String):User!
-    addPost(user_id:ID!, title:String!, photo:String!):Posts!
+    addPost(title:String!, photo:String!):Posts!
     addComment(post_id:ID!, comment:String):Comments!
     addLike(post_id:ID!):Likes!
     addFollower(user_followed_id:ID!): [Followers!]!
