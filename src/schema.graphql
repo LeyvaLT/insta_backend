@@ -2,6 +2,7 @@
 
 type Query {
     users:[User!]!
+    user(user_id:ID!):User!
     me:User!
     posts: [Posts!]!
     user_posts: [Posts!]!

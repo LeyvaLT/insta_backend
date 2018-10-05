@@ -26,6 +26,10 @@ async function post_likes(parent,args,context,info) {
     return context.db.query.likeses({where:{post:{id:args.post_id}}},info)
 }
 
+async function user(parent,args,context,info) {
+    return context.db.query.user({where:{id:args.user_id}},info)
+}
+
 async function user_posts(parent,args,context,info) {
     let user = getUserId(context);
     return context.db.query.postses({where:{user:{id:user}}},info)
@@ -66,5 +70,6 @@ module.exports = {
     user_followers,
     user_followed,
     me,
-    post_comments
+    post_comments,
+    user
 };
